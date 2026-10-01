@@ -1,0 +1,5 @@
+apiVersion: v2
+name: orders-api
+description: Demo order-service API deployed via GitHub Actions CI/CD
+version: 0.1.0
+appVersion: "1.0"

@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: 478651103591.dkr.ecr.us-east-1.amazonaws.com/orders-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
