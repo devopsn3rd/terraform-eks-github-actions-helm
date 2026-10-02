@@ -27,6 +27,7 @@ module "eks" {
 resource "aws_ecr_repository" "orders_api" {
   name                 = "orders-api"
   image_tag_mutability = "IMMUTABLE"
+  force_delete         = true
 
   image_scanning_configuration {
     scan_on_push = true
@@ -96,4 +97,6 @@ resource "aws_eks_access_policy_association" "github_actions" {
     type       = "namespace"
     namespaces = ["default"]
   }
+
+  depends_on = [aws_eks_access_entry.github_actions]
 }

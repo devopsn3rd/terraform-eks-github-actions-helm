@@ -2,7 +2,8 @@
 
 A CI/CD pipeline that builds a containerized Python service, pushes it to Amazon ECR, and deploys it to Amazon EKS via Helm — triggered automatically by GitHub Actions on every merge to `main`, authenticating to AWS with short-lived credentials via GitHub OIDC (no stored AWS keys). Infrastructure is provisioned with Terraform.
 
-Part of a portfolio series — see [Project 1](#) for the standalone VPC/EKS/Terraform build this project's infrastructure pattern is based on.
+Part 2 of a portfolio series — see [Project 1](#) for the standalone VPC/EKS/Terraform build this project's infrastructure pattern is based on.
+Note: you don't need to copy anthing from Project 1. Project 2 is a standalone project :)
 
 ## Architecture
 
